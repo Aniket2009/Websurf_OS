@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lockscreen.css">
+    <script src="lockscreen.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+   
+    <center>
+<div class="lock_screen">
+    <div class="lock_screen_image">
+      
+        <h1 id="current-time"></h1>
+        <p id="current-date"></p>
+  <a href="Homescreen.html">    <img src="up_arrow.png" class="up_arrow"> </a> 
+       <p id="dummy_text"> Cilck to unlock </p>
+    </div>
+</div>
+</center>
+<!-- This is the script part of the HTML code above -->
+<script>
+    let time = document.getElementById("current-time");
+
+setInterval(()=>{
+    let d = new Date();
+    time.innerHTML = d.toLocaleTimeString();
+},1000)
+
+
+let date = document.getElementById("current-date");
+setInterval(()=>{
+    let d = new Date();
+    date.innerHTML = d.toLocaleDateString();
+},1000)
+
+
+</script>
+
+<!-- Script ends here -->
+</body>
+</html>

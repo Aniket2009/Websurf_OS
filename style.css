@@ -1,0 +1,15 @@
+.web_screen{
+    margin:auto;
+    border:10px solid black;
+    border-radius:40px;
+    width:320px;
+    height:700px;
+    position:relative;
+    
+}
+
+iframe{
+    width:99%;
+    height:99%;
+border-radius:30px;
+}
